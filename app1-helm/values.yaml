@@ -1,7 +1,9 @@
 # Registry and repository for Docker images
 # Default is docker/robotshop/image:latest
+app:
+  namespace: app1-ns
 image:
-  repo: robotshop
+  repo:
   version: latest
   pullPolicy: IfNotPresent
 
