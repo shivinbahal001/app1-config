@@ -36,8 +36,10 @@ ENV CATALOGUE_HOST=catalogue \
 # Instana tracing
 COPY --from=build /instana/*.so /tmp/
 
-COPY entrypoint.sh /root/
-ENTRYPOINT ["/root/entrypoint.sh"]
+COPY entrypoint.sh /usr/local/bin/entrypoint.sh
+RUN chmod 755 /usr/local/bin/entrypoint.sh
+
+ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
 
 COPY default.conf.template /etc/nginx/conf.d/default.conf.template
 COPY static /usr/share/nginx/html
