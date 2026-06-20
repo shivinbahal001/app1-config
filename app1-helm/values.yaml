@@ -3,9 +3,9 @@
 app:
   namespace: app1-ns
 image:
-  repo:
-  version: latest
-  pullPolicy: IfNotPresent
+  repo: 192.168.49.2:32785
+  version: "1.0"
+  pullPolicy: Never
 
 # EUM configuration
 # Provide your key and set the endpoint
