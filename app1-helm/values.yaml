@@ -21,6 +21,11 @@ psp:
 # For the mini ones minikube, minishift set to true
 nodeport: true
 
+# Service configuration
+service:
+  type: NodePort
+  port: 8080
+
 # "special" Openshift. Set to true when deploying to any openshift flavour
 openshift: false
 
