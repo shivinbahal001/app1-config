@@ -5,7 +5,7 @@ app:
 image:
   repo: 192.168.49.2:32785
   version: "1.0"
-  pullPolicy: Never
+  pullPolicy: IfNotPresent
 
 # EUM configuration
 # Provide your key and set the endpoint
@@ -19,7 +19,7 @@ psp:
   enabled: false
 
 # For the mini ones minikube, minishift set to true
-nodeport: false
+nodeport: true
 
 # "special" Openshift. Set to true when deploying to any openshift flavour
 openshift: false
