@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/shivinbahal001/ArgoCD-Basics-To-Production.git
+    repoURL: https://github.com/shivinbahal001/app1-config.git
     targetRevision: HEAD
     path: app1-helm
     helm:
