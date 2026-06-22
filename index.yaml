@@ -1,1 +1,19 @@
+apiVersion: v1
+kind: Index
+entries:
+  robot-shop:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2026-06-22T00:00:00Z"
+    description: Sample microservices application
+    digest: ""
+    home: https://github.com/shivinbahal001/app1-config.git
+    name: robot-shop
+    sources:
+    - https://github.com/shivinbahal001/app1-config
+    type: application
+    urls:
+    - app1-helm-1.1.0.tgz
+    version: "1.1.0"
+generated: "2026-06-22T00:00:00Z"
 
